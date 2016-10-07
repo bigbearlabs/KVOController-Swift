@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5137E9D91DE43A30000CE97C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5137E9D81DE43A30000CE97C /* Cocoa.framework */; };
+		5137E9E11DE43A6C000CE97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5137E9E01DE43A6C000CE97C /* AppDelegate.swift */; };
+		5137E9E31DE43A6C000CE97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5137E9E21DE43A6C000CE97C /* Assets.xcassets */; };
+		5137E9E61DE43A6C000CE97C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5137E9E41DE43A6C000CE97C /* MainMenu.xib */; };
+		5137E9EB1DE43AD5000CE97C /* KVOController_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB991921DA6A548003E3A0D /* KVOController_Swift.framework */; };
+		5137E9EC1DE43AD5000CE97C /* KVOController_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB991921DA6A548003E3A0D /* KVOController_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CB9917C1DA6A520003E3A0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9917B1DA6A520003E3A0D /* AppDelegate.swift */; };
 		5CB9917E1DA6A520003E3A0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9917D1DA6A520003E3A0D /* ViewController.swift */; };
 		5CB991811DA6A520003E3A0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB9917F1DA6A520003E3A0D /* Main.storyboard */; };
@@ -23,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5137E9ED1DE43AD5000CE97C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CB991701DA6A520003E3A0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CB991911DA6A548003E3A0D;
+			remoteInfo = "KVOController-Swift";
+		};
 		5CB9919C1DA6A548003E3A0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5CB991701DA6A520003E3A0D /* Project object */;
@@ -47,6 +60,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5137E9EF1DE43AD5000CE97C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5137E9EC1DE43AD5000CE97C /* KVOController_Swift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CB991AC1DA6A548003E3A0D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,6 +85,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5137E9D81DE43A30000CE97C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5137E9DE1DE43A6B000CE97C /* KVOController-SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KVOController-SwiftDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5137E9E01DE43A6C000CE97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5137E9E21DE43A6C000CE97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5137E9E51DE43A6C000CE97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5137E9E71DE43A6C000CE97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CB991781DA6A520003E3A0D /* KVOController-Swift-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KVOController-Swift-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB9917B1DA6A520003E3A0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CB9917D1DA6A520003E3A0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,10 +112,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5137E9DB1DE43A6B000CE97C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5137E9EB1DE43AD5000CE97C /* KVOController_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CB991751DA6A520003E3A0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5137E9D91DE43A30000CE97C /* Cocoa.framework in Frameworks */,
 				5CB991A71DA6A548003E3A0D /* KVOController_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +147,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5137E9D71DE43A30000CE97C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5137E9D81DE43A30000CE97C /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5137E9DF1DE43A6C000CE97C /* KVOController-SwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5137E9E01DE43A6C000CE97C /* AppDelegate.swift */,
+				5137E9E21DE43A6C000CE97C /* Assets.xcassets */,
+				5137E9E41DE43A6C000CE97C /* MainMenu.xib */,
+				5137E9E71DE43A6C000CE97C /* Info.plist */,
+			);
+			path = "KVOController-SwiftDemo";
+			sourceTree = "<group>";
+		};
 		5CB9916F1DA6A520003E3A0D = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +173,9 @@
 				5CB991EF1DA77451003E3A0D /* KVOController-Swift */,
 				5CB991A01DA6A548003E3A0D /* KVOController-SwiftTests */,
 				5CB9917A1DA6A520003E3A0D /* KVOController-Swift-Example */,
+				5137E9DF1DE43A6C000CE97C /* KVOController-SwiftDemo */,
 				5CB991791DA6A520003E3A0D /* Products */,
+				5137E9D71DE43A30000CE97C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +185,7 @@
 				5CB991781DA6A520003E3A0D /* KVOController-Swift-Example.app */,
 				5CB991921DA6A548003E3A0D /* KVOController_Swift.framework */,
 				5CB9919A1DA6A548003E3A0D /* KVOController-SwiftTests.xctest */,
+				5137E9DE1DE43A6B000CE97C /* KVOController-SwiftDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +256,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5137E9DD1DE43A6B000CE97C /* KVOController-SwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5137E9E81DE43A6C000CE97C /* Build configuration list for PBXNativeTarget "KVOController-SwiftDemo" */;
+			buildPhases = (
+				5137E9DA1DE43A6B000CE97C /* Sources */,
+				5137E9DB1DE43A6B000CE97C /* Frameworks */,
+				5137E9DC1DE43A6B000CE97C /* Resources */,
+				5137E9EF1DE43AD5000CE97C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5137E9EE1DE43AD5000CE97C /* PBXTargetDependency */,
+			);
+			name = "KVOController-SwiftDemo";
+			productName = "KVOController-SwiftDemo";
+			productReference = 5137E9DE1DE43A6B000CE97C /* KVOController-SwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5CB991771DA6A520003E3A0D /* KVOController-Swift-Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CB9918A1DA6A520003E3A0D /* Build configuration list for PBXNativeTarget "KVOController-Swift-Example" */;
@@ -257,17 +337,23 @@
 		5CB991701DA6A520003E3A0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Varaw;
 				TargetAttributes = {
+					5137E9DD1DE43A6B000CE97C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XK44TD8U4S;
+						ProvisioningStyle = Automatic;
+					};
 					5CB991771DA6A520003E3A0D = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 					5CB991911DA6A548003E3A0D = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0800;
+						DevelopmentTeam = XK44TD8U4S;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					5CB991991DA6A548003E3A0D = {
@@ -290,14 +376,24 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5CB991771DA6A520003E3A0D /* KVOController-Swift-Example */,
 				5CB991911DA6A548003E3A0D /* KVOController-Swift */,
+				5CB991771DA6A520003E3A0D /* KVOController-Swift-Example */,
 				5CB991991DA6A548003E3A0D /* KVOController-SwiftTests */,
+				5137E9DD1DE43A6B000CE97C /* KVOController-SwiftDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5137E9DC1DE43A6B000CE97C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5137E9E31DE43A6C000CE97C /* Assets.xcassets in Resources */,
+				5137E9E61DE43A6C000CE97C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CB991761DA6A520003E3A0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,6 +422,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5137E9DA1DE43A6B000CE97C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5137E9E11DE43A6C000CE97C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CB991741DA6A520003E3A0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,6 +459,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5137E9EE1DE43AD5000CE97C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CB991911DA6A548003E3A0D /* KVOController-Swift */;
+			targetProxy = 5137E9ED1DE43AD5000CE97C /* PBXContainerItemProxy */;
+		};
 		5CB9919D1DA6A548003E3A0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5CB991911DA6A548003E3A0D /* KVOController-Swift */;
@@ -373,6 +482,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5137E9E41DE43A6C000CE97C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5137E9E51DE43A6C000CE97C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		5CB9917F1DA6A520003E3A0D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -392,6 +509,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5137E9E91DE43A6C000CE97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XK44TD8U4S;
+				INFOPLIST_FILE = "KVOController-SwiftDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bigbearlabs.KVOController-SwiftDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5137E9EA1DE43A6C000CE97C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XK44TD8U4S;
+				INFOPLIST_FILE = "KVOController-SwiftDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bigbearlabs.KVOController-SwiftDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		5CB991881DA6A520003E3A0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -410,6 +561,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -435,7 +587,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -459,6 +611,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -477,7 +630,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -513,21 +666,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XK44TD8U4S;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Varaw.KVOController-Swift";
 				PRODUCT_NAME = KVOController_Swift;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 x86_64 arm64 arm7s arm7";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -537,20 +694,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XK44TD8U4S;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Varaw.KVOController-Swift";
 				PRODUCT_NAME = KVOController_Swift;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 x86_64 arm64 arm7s arm7";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -585,6 +746,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5137E9E81DE43A6C000CE97C /* Build configuration list for PBXNativeTarget "KVOController-SwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5137E9E91DE43A6C000CE97C /* Debug */,
+				5137E9EA1DE43A6C000CE97C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5CB991731DA6A520003E3A0D /* Build configuration list for PBXProject "KVOController-Swift-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
